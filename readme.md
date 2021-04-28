@@ -2,6 +2,8 @@
 
 Private repo for our onetrust demo
 
+Please replace your Segment write key and OneTrust domain id
+
 ## Folder Structure
 
 ```
