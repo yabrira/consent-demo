@@ -13,16 +13,14 @@ Last Updated: 06/25/20
 - js/index.js
 - onetrust_1.html
 - onetrust_2.html 
-- img/outreach-bg.png
+- img/bg.png
 
-### Summary:
-Outreach uses the OneTrust Consent Manager on their Marketing website (outreach.io). Outreach needed a way to control the Destinations that are enabled for a website user based on the prefernces they consent to through the OneTrust Consent Manager. 
 
 #### js/index.js: 
 This file contains the main logic that checks the end user's OneTrust consent prefernces, then conditionally loads the Segment analytics.js library based on those preferences. 
 
 #### onetrust_1.html and onetrust_2.html: 
-These 2 HTML files host a working version of the OneTrust Consent Manager alongside the index.js code. You can view a hosted version of these files [here](https://sekscollin.com.br/outreach_onetrust/onetrust_1.html).
+These 2 HTML files host a working version of the OneTrust Consent Manager alongside the index.js code. 
 
 ### How it works: 
 1. We remove the Segment analytics.load() function from the Segment analytics.js snippet. This prevents the Segment analytics library from loading on the page. 
@@ -33,7 +31,7 @@ These 2 HTML files host a working version of the OneTrust Consent Manager alongs
 
 ### Code notes: 
 
-- The following URL is requested to retrieve the list of enabled Destinations for the current website (note, link uses Production OneTrust Write Key): [https://cdn.segment.com/v1/projects/${writeKey}/integrations](https://cdn.segment.com/v1/projects/tozXNEm73pVqQw1d5Fho7T6JmO2s0wqr/integrations)
+- The following URL is requested to retrieve the list of enabled Destinations for the current website (note, link uses Production OneTrust Write Key): [https://cdn.segment.com/v1/projects/${writeKey}/integrations](https://cdn.segment.com/v1/projects/<writekey>/integrations)
 
 #### OneTrust functions used: 
 
