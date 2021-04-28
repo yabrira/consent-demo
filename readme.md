@@ -1,5 +1,5 @@
 # outreach.io
-Private repo for all outreach.io related custom code, config
+Private repo for our onetrust demo
 
 ## Folder Structure
 ```
